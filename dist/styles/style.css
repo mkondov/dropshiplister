@@ -1,0 +1,282 @@
+#shipping-spinner {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0.3);
+	z-index: 1000
+}
+
+#shipping-spinner>div {
+	margin-left: auto;
+	margin-right: auto
+}
+
+.uil-ring-css {
+	background: none;
+	position: relative;
+	width: 200px;
+	height: 200px
+}
+
+.uil-ring-css>div {
+	position: absolute;
+	display: block;
+	width: 160px;
+	height: 160px;
+	top: 20px;
+	left: 20px;
+	border-radius: 80px;
+	box-shadow: 0 6px 0 0 #59ebff;
+	-ms-animation: uil-ring-anim 1s linear infinite;
+	-moz-animation: uil-ring-anim 1s linear infinite;
+	-webkit-animation: uil-ring-anim 1s linear infinite;
+	-o-animation: uil-ring-anim 1s linear infinite;
+	animation: uil-ring-anim 1s linear infinite
+}
+
+a.shipping-link {
+	color: #03ab8e
+}
+
+a.shipping-link:link, a.shipping-link:visited {
+	color: #03ab8e !important
+}
+
+a.shipping-link.shipping-to-amazon {
+	margin-top: 8px;
+	display: block
+}
+
+a.shipping-btn, a.shipping-btn:link, .shipping-btn {
+	display: block;
+	text-align: center !important;
+	margin-top: 8px !important;
+	margin-bottom: 10px !important;
+	border: 1px solid #03ab8e !important;
+	padding: 8px 16px;
+	background-color: white;
+	color: #03ab8e !important;
+	text-decoration: none;
+	font-family: "Roboto Condensed", sans-serif;
+	font-size: 14px !important;
+	cursor: pointer !important;
+	text-decoration: none !important;
+	-webkit-transition: color 0.2s, background-color 0.2s;
+	transition: background-color color 0.2s, background-color 0.2s
+}
+
+a.shipping-btn:hover, a.shipping-btn:active, a.shipping-btn:link:hover, a.shipping-btn:link:active,
+	.shipping-btn:hover, .shipping-btn:active {
+	font-family: "Roboto Condensed", sans-serif;
+	color: white !important;
+	background-color: #03ab8e
+}
+
+a.shipping-btn[disabled], a.shipping-btn:link[disabled], .shipping-btn[disabled] {
+	cursor: default
+}
+
+.shipping-center {
+	text-align: center
+}
+
+.shipping-hide, .shipping-tn-hidden {
+	display: none !important
+}
+
+#CustomLabel {
+	text-align: center
+}
+
+.shreskin-body .shreskin-sold-wrapper-table>tbody>tr #createList,
+	.shreskin-body .shreskin-sold-wrapper-table>tbody>tr:first-child+tr+tr+tr
+	{
+	display: initial !important
+}
+
+.shreskin-body .dataTbl #mu_active_tbl_id #tbl_mu_active_tbl_id td a {
+	color: #1455E7
+}
+
+.shipping-ebay-addr {
+	color: #03ab8e;
+	display: block
+}
+
+.shipping-ebay-name {
+	font-weight: bold
+}
+
+.shipping-ebay-delivery {
+	color: #83003c;
+	font-size: 12px;
+	font-weight: bold;
+	float: left
+}
+
+.shipping-ebay-delivery .title {
+	font-weight: normal
+}
+
+.global-shipping-notice {
+	color: #DE9100
+}
+
+.dt-nsb #LineActions {
+	height: 145px
+}
+
+.shipping-btn.mark-ordered {
+	background-color: #DE9100 !important;
+	color: white !important;
+	border: 1px solid white
+}
+
+#shipping-tn-stats {
+	color: #83003c;
+	border: 1px solid #03ab8e;
+	border-top: 0;
+	padding: 10px 0px;
+	text-align: center
+}
+
+#shipping-tn-stats .shipping-tn-stats-count {
+	font-size: 24px;
+	color: #83003c;
+	font-weight: bold
+}
+
+#shipping-tn-stats .shipping-tn-stats-text {
+	color: #83003c
+}
+
+#shipping-tn-stats .shipping-tn-stats-time {
+	color: #03ab8e
+}
+
+#shipping-tn-loading {
+	display: none
+}
+
+#shipping-tn-loading i {
+	font-size: 16px
+}
+
+#shipping-tn-walmart-stats {
+	color: #83003c;
+	border: 1px solid #03ab8e;
+	border-top: 0;
+	padding: 10px 0px;
+	text-align: center
+}
+
+#shipping-tn-walmart-stats .shipping-tn-walmart-stats-count {
+	font-size: 24px;
+	color: #83003c;
+	font-weight: bold
+}
+
+#shipping-tn-walmart-stats .shipping-tn-walmart-stats-text {
+	color: #83003c
+}
+
+#shipping-tn-walmart-stats .shipping-tn-walmart-stats-time {
+	color: #03ab8e
+}
+
+#shipping-tn-loading-walmart {
+	display: none
+}
+
+#shipping-tn-loading-walmart i {
+	font-size: 16px
+}
+
+
+#shipping-below-search-div {
+	margin: 10px;
+	margin-left: 20px;
+	display: inline-block
+}
+
+#add-all-addresses, #add-all-items-to-cart {
+	margin-left: -1px;
+	margin-bottom: 0;
+	display: inline-block
+}
+.cashback-label{
+	color: #03ab8e;
+	font-size: 14px;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif!important;
+    font-size: 12px!important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.4;
+}
+.select-cashback{
+	width: 100%;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif!important;
+    font-size: 12px!important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.4;
+    display: block;
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    background-color: white;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    color: #03ab8e;
+    text-decoration: none;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #03ab8e;
+    border-image: initial;
+    padding: 8px 16px;
+    transition: color 0.2s, background-color 0.2s;
+}
+.csv-input{
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.blockquote {
+  padding: 11px 22px;
+  font-size: 1.25rem;
+  color: #526069;
+  border-left: 2px solid #e4eaec;
+  margin: unset;
+  margin-bottom: 10px;
+}
+
+.blockquote p:last-child {
+  margin: 0;
+}
+
+.blockquote-success {
+  background-color: rgba(17, 194, 109, .1);
+  border-color: #11c26d;
+}
+
+.blockquote-info {
+  background-color: rgba(11, 178, 212, .1);
+  border-color: #0bb2d4;
+}
+
+.blockquote-warning {
+  background-color: rgba(235, 103, 9, .1);
+  border-color: #eb6709;
+}
+
+.blockquote-danger {
+  background-color: rgba(255, 76, 82, .1);
+  border-color: #ff4c52;
+}

@@ -1,0 +1,370 @@
+
+<!DOCTYPE html>
+<html class="no-js css-menubar" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description" content="bootstrap admin template">
+    <meta name="author" content="">
+
+    <title>Saved Listings | Dropship Helper</title>
+
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-extend.min.css">
+
+    <link rel="stylesheet" href="assets/css/site.min.css">
+
+    <!-- Plugins -->
+    <link rel="stylesheet" href="assets/vendor/animsition/animsition.css">
+    <link rel="stylesheet" href="assets/vendor/asscrollable/asScrollable.css">
+    <link rel="stylesheet" href="assets/vendor/switchery/switchery.css">
+    <link rel="stylesheet" href="assets/vendor/intro-js/introjs.css">
+    <link rel="stylesheet" href="assets/vendor/slidepanel/slidePanel.css">
+    <link rel="stylesheet" href="assets/vendor/flag-icon-css/flag-icon.css">
+    <link rel="stylesheet" href="assets/vendor/footable/footable.core.css">
+    <link rel="stylesheet" href="assets/examples/css/tables/footable.css">
+
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="assets/fonts/web-icons/web-icons.min.css">
+    <link rel="stylesheet" href="assets/fonts/brand-icons/brand-icons.min.css">
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,300italic'>
+
+    <!--[if lt IE 9]>
+    <script src="assets/vendor/html5shiv/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <!--[if lt IE 10]>
+    <script src="assets/vendor/media-match/media.match.min.js"></script>
+    <script src="assets/vendor/respond/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Scripts -->
+    <script src="assets/vendor/breakpoints/breakpoints.js"></script>
+
+    <style>
+        body.site-navbar-small {
+            padding-top: 3.858rem;
+        }
+        .navbar-inverse {
+            background-color: #fbfcff;
+            border-color: rgba(0,0,0,.1);
+        }
+        .site-navbar .navbar-header .navbar-brand-logo {
+            height: 30px;
+        }
+
+        table#listingsTable td{
+            font-weight: 500;
+            text-decoration: unset;
+        }
+        table#listingsTable a{
+            font-weight: 500;
+            text-decoration: unset;
+        }
+
+
+        .site-menu-icon{
+            color: #fff;
+            font-size:19px;
+        }
+
+        .site-menu-title{
+            color:#fff;
+            font-size:16px;
+            font-weight: 400;
+        }
+
+        @media (max-width: 767px){
+            .site-menu-title {
+                font-weight: 500;
+                color: #fff;
+                font-size: 19px;
+            }
+        }
+        @media (max-width: 767px) {
+            .site-menu-icon {
+                margin-right: 14px;
+                color:#fff;
+                font-size:19px;
+
+            }
+        }
+
+        /*.column-mapping-selector{
+            display:block !important;
+        }*/
+    </style>
+</head>
+<body class="animsition site-navbar-small ">
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<nav class="site-navbar navbar navbar-default navbar-fixed-top navbar-mega navbar-inverse"
+     role="navigation">
+
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler hamburger hamburger-close navbar-toggler-left hided"
+                data-toggle="menubar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="hamburger-bar"></span>
+        </button>
+        <button type="button" class="navbar-toggler collapsed" data-target="#site-navbar-collapse"
+                data-toggle="collapse">
+            <i class="icon wb-more-horizontal" aria-hidden="true"></i>
+        </button>
+        <a class="navbar-brand navbar-brand-center" href="../index.html">
+            <img class="navbar-brand-logo navbar-brand-logo-normal" src="https://dropshiplister.com/wp-content/uploads/2020/04/dropship_lister_logo_by_dalio-247x50.png"
+                 title="Dropship Helper">
+            <img class="navbar-brand-logo navbar-brand-logo-special" src="https://dropshiplister.com/wp-content/uploads/2020/04/dropship_lister_logo_by_dalio-247x50.png"
+                 title="Dropship Helper">
+            <span class="navbar-brand-text hidden-xs-down"> Dropship Lister</span>
+        </a>
+
+    </div>
+
+</nav>
+
+</div>
+
+<!-- Page -->
+<div class="page" id="pageDashboard" style="margin-top: 0px;">
+    <div class="page-header">
+        <h1 class="page-title">Saved Listings</h1>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="https://dropshiplister.com">Dropship Lister</a></li>
+            <li class="breadcrumb-item"><a href="javascript:void(0)">Extension</a></li>
+            <li class="breadcrumb-item active">Saved Listings</li>
+        </ol>
+    </div>
+
+    <div class="page-content container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <!-- Panel Row Toggler -->
+                <div class="panel">
+                    <div class="panel-body collapse show" id="exampleFooCollapsePanel">
+                        <div class="row" id="csv-upload-button" style="margin-left: 10px;">
+
+                            <div class="col-8">
+                                <div class="row">
+
+
+                                <div class="form-group" style="display:inline-block;margin-bottom:10px;margin-right: 10px;">
+
+                                        <div style="display:inline-block" class="input-group input-group-file" data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="Upload a CSV file with listings" title="">
+                                                      <span style="display:inline-block" class="input-group-btn">
+                                                      <span class="btn btn-primary btn-file">
+                                                          <i class="icon wb-download" aria-hidden="true"></i>
+                                                          <input id="listings-upload-csv-file" type="file" name="" multiple="">Import</span></span>
+                                        </div>
+
+
+                                    </div>
+
+
+                                    <div class="form-group" style="display:inline-block;margin-bottom:10px;margin-right: 10px;">
+
+
+                                        <div style="display:inline-block" class="input-group input-group-file" data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="Export a CSV file with listings" title="">
+                                            <button id="csv-export-btn" type="button" class="btn btn-block btn-primary">  <i class="icon wb-upload" style="margin:unset;float:left;margin-right:2px" aria-hidden="true"></i> <span style="float:right;">Export</span></button>
+
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="col-4">
+                                <div class="form-group" style="display:inline-block;margin-bottom:10px;float:right;">
+
+
+                                    <div style="display:inline-block" class="input-group input-group-file" data-toggle="tooltip" data-placement="top" data-trigger="hover" data-original-title="Clear table" title="">
+                                        <button id="clear-table-btn" type="button" class="btn btn-block btn-outline-danger">  <i class="icon wb-close" style="margin:unset;float:left;margin-right:2px" aria-hidden="true"></i> <span style="float:right;">Clear</span></button>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+
+
+                        <div class="row" id="csv-column-mapping" style="display:none">
+                            <div class="col-12">
+
+
+                        <div class="row">
+                            <div class="col-12">
+
+                                <div class="row">
+                                    <div class="col-2">
+                                        <span style="font-weight: 700">Your File</span>
+                                    </div>
+                                    <div class="col-2">
+                                        <span style="font-weight: 700">Data Label</span>
+                                    </div>
+                                </div>
+                                <br>
+
+                                <div class="row column-mapping-selector">
+
+
+                                    <div class="col-2">
+                                        <p class="form-control-plaintext column-example"></p>
+                                    </div>
+                                    <div class="col-2">
+                                       <select class="column-select">
+
+                                        </select>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+                            <div class="col-6">
+
+
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="row">
+
+                                    <div class="col-2">
+                                        <button id="csv-import-btn" type="button" class="btn btn-block btn-primary">Import</button>
+                                    </div>
+
+
+                                    <div class="col-2">
+                                        <button id="csv-cancel-btn" type="button" class="btn btn-block btn-default">Cancel</button>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                            </div>
+
+                        </div>
+
+                        <table id="listingsTable" class="table table-bordered table-hover toggle-circle"
+                               data-paging="true" data-filtering="true" data-sorting="true">
+                            <thead>
+                            <tr>
+                                <th data-name="images">Images</th>
+                                <th data-name="title">Title</th>
+                                <th data-name="source">Source</th>
+                                <th data-name="price" data-breakpoints="all">Price</th>
+                                <th data-name="summary" data-breakpoints="all">Summary</th>
+                                <th data-name="variations" data-breakpoints="all">Variations</th>
+                                <th data-name="specifics" data-breakpoints="all">Specifics</th>
+                                <th data-name="description" data-breakpoints="all">Description</th>
+                                <th data-name="action"></th>
+                                <th data-name="time_created" data-breakpoints="all">Copied On</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- End Panel Row Toggler -->
+            </div>
+
+        </div>
+
+
+    </div>
+</div>
+<!-- End Page -->
+
+<!-- Page -->
+<div class="page" id="pageAuth" style="margin-top: 50px;">
+    <div class="page-header">
+        <h1 class="page-title">Logged Out</h1>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="https://dropshiplister.com">Dropship Lister</a></li>
+            <li class="breadcrumb-item"><a href="javascript:void(0)">Extension</a></li>
+            <li class="breadcrumb-item active">Logged Out</li>
+        </ol>
+    </div>
+
+    <div class="page-content container-fluid">
+        <span id="accountInfo"></span>
+    </div>
+
+</div>
+<!-- End Page -->
+
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="site-footer-legal">© 2020 <a target="_blank" href="https://dropshiplister.com">Dropship Lister</a></div>
+    <div class="site-footer-right">
+        Crafted with <i class="red-600 wb wb-heart"></i> by <a target="_blank" href="https://dropshiplister.com">Dropship Lister</a>
+    </div>
+</footer>
+<!-- Core  -->
+<script src="assets/vendor/babel-external-helpers/babel-external-helpers.js"></script>
+<script src="libs/jquery-2.2.1.js"></script>
+<script src="libs/jquery-ui.js"></script>
+<script src="libs/jquery.fileupload.js"></script>
+<script src="assets/vendor/popper-js/umd/popper.min.js"></script>
+<script src="assets/vendor/bootstrap/bootstrap.js"></script>
+<script src="assets/vendor/bootstrap-select/bootstrap-select.js"></script>
+<script src="assets/vendor/animsition/animsition.js"></script>
+<script src="assets/vendor/mousewheel/jquery.mousewheel.js"></script>
+<script src="assets/vendor/asscrollbar/jquery-asScrollbar.js"></script>
+<script src="assets/vendor/asscrollable/jquery-asScrollable.js"></script>
+
+<!-- Plugins -->
+<script src="assets/vendor/switchery/switchery.js"></script>
+<script src="assets/vendor/intro-js/intro.js"></script>
+<script src="assets/vendor/screenfull/screenfull.js"></script>
+<script src="assets/vendor/slidepanel/jquery-slidePanel.js"></script>
+<script src="assets/vendor/moment/moment.min.js"></script>
+<script src="assets/vendor/footable/footable.min.js"></script>
+
+<!-- Scripts -->
+<script src="assets/js/Component.js"></script>
+<script src="assets/js/Plugin.js"></script>
+<script src="assets/js/Base.js"></script>
+<script src="assets/js/Config.js"></script>
+
+<script src="assets/js/Section/Menubar.js"></script>
+<script src="assets/js/Section/Sidebar.js"></script>
+<script src="assets/js/Section/PageAside.js"></script>
+<script src="assets/js/Plugin/menu.js"></script>
+
+<!-- Page -->
+<script src="assets/js/Site.js"></script>
+<script src="assets/js/Plugin/asscrollable.js"></script>
+<script src="assets/js/Plugin/slidepanel.js"></script>
+<script src="assets/js/Plugin/switchery.js"></script>
+
+<script src="assets/examples/js/tables/footable.js"></script>
+
+<script src="libs/jquery.fileupload.js"></script>
+<script src="libs/FileSaver.js"></script>
+<script src="libs/notify.js"></script>
+<script src="scripts/dash.js"></script>
+
+
+</body>
+</html>

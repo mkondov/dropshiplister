@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+
+<head>
+<meta charset="utf-8">
+    <title>Settings</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/pStyle.css">
+</head>
+
+<body>
+
+    <div class="shipping-center">
+
+       <div class="login-container shipping-hide">
+           </br>
+            <a href="https://dropshiplister.com" target="_blank"><img style="margin: auto;    padding-left: 0px;" height=70px src='images/logo.png'/></a>
+			<div id="einstellungen-users">
+			 </br>
+            <form style="width: 60%;margin: auto;" action="post" id="shipping-login">
+                <div>
+                    <input placeholder="Email" class="input-text" id="user" type="text" name="user" style="margin-bottom: 10px;">
+                </div>
+                <div>
+                    <input placeholder="Password" class="input-text" id="pass" type="password" name="user"  style="margin-bottom: 10px;">
+                </div>
+                By using this extension, you accept the <a href="https://dropshiplister.com/privacy-policy" target="_blank">Privacy Policy</a>
+                <br/>
+                <div id="amz-save-wrapper">
+                        <input style="cursor:pointer" id="login-btn" type="submit" value="Login">
+                    </div>
+                 <br/>
+	        	<b>Before use:</b> </br></br>
+	        	1. <a href="https://www.ebay.com/sh/landing" target="_blank">Activate Seller Hub</a> <br/>
+	        	2. <a href="https://www.youtube.com/watch?v=0BKhUDoYst0" target="_blank">Watch 'How It Works' Tutorial Video</a> <br/>
+                <br/>
+                <br/>
+                <span>Don't have an account? <a href="https://dropshiplister.com/" target="_blank">Start Free Trial!</a></span>
+                <br/>
+                <br/>
+                <span>Forgot password? <a href="https://dropshiplister.com/my-account/lost-password" target="_blank">Password Recovery</a></span>
+                <br/>
+                <br/>
+                
+            </form>
+            </div>
+        </div>
+
+        <div class="member-container">
+        <div id="einstellungen-users">
+         </br>
+        <ul>
+        
+         <li class="section tg-list-item dom-selectors">
+        	<ul class="left-ul" style="width: 50%;float: left;" >
+                <li style="width: 100%;float: left;">
+
+                    <input class='shipping-btn dom-select-clear' style='width:95%;float:left;' type='button' id='dom-select-clear' value='Clear' json-data=''>
+
+                </li>
+        		<li style="width: 100%;float: left;">
+        		
+        			<input class='shipping-btn dom-select-title' style='width:40%;float:left;' type='button' id='dom-select-title' value='Title' json-data=''>
+        			
+        			<span style='width:50%;margin-top:7%;float:right' dom-selected-type="Title" >
+        			...
+        			</span>
+        	
+        		</li>
+        		<li style="width: 100%;float: left;">
+        		
+        			<input class='shipping-btn dom-select-gallery' style='width:40%;float:left;' type='button' id='dom-select-gallery' value='Gallery' json-data=''>
+        			
+        			<span style='width:50%;margin-top:7%;float:right' dom-selected-type="Gallery">
+        			...
+        			</span>
+        	
+        		</li>
+        		
+        		<li style="width: 100%;float: left;">
+        		
+        			<input class='shipping-btn dom-select-summary' style='width:40%;float:left;' type='button' id='dom-select-summary' value='Summary' json-data=''>
+        			
+        			<span style='width:50%;margin-top:7%;float:right' dom-selected-type="Summary">
+        			...
+        			</span>
+        	
+        		</li>
+        		
+        		<li style="width: 100%;float: left;">
+        		
+        			<input class='shipping-btn dom-select-price' style='width:40%;float:left;' type='button' id='dom-select-price' value='Price' json-data=''>
+        			
+        			<span style='width:50%;margin-top:7%;float:right' dom-selected-type="Price">
+        			...
+        			</span>
+        	
+        		</li>
+        		
+        		<li style="width: 100%;float: left;">
+        		
+        			<input class='shipping-btn dom-select-variations' style='width:40%;float:left;' type='button' id='dom-select-variations' value='Variations' json-data=''>
+        			
+        			<span style='width:50%;margin-top:7%;float:right' dom-selected-type="Variations">
+        			...
+        			</span>
+        	
+        		</li>
+        		
+        		<li style="width: 100%;float: left;">
+        		
+        			<input class='shipping-btn dom-select-specifics' style='width:40%;float:left;' type='button' id='dom-select-specifics' value='Specifics' json-data=''>
+        			
+        			<span style='width:50%;margin-top:7%;float:right' dom-selected-type="Specifics">
+        			...
+        			</span>
+        			
+        		</li>
+        		
+        		<li style="width: 100%;float: left;">
+        		
+        			<input class='shipping-btn dom-select-description' style='width:40%;float:left;' type='button' id='dom-select-description' value='Description' json-data=''>
+        			
+        			<span style='width:50%;margin-top:7%;float:right' dom-selected-type="Description">
+        			...
+        			</span>
+
+                </li>
+        		
+        	</ul>
+        	
+
+        	</li>
+
+                     <a href="https://dropshiplister.com" target="_blank"><img style="margin: auto;height: 40px;width: 180px;display: block;margin-bottom: 10px;" height=70px src='images/logo.png'/></a>
+                     
+                     <li class="domain-div section tg-list-item">
+                        <span>eBay domain:
+            <span class="narrow" data-tooltip="Choose which country your accounts are in. Example: eBay.com or eBay.co.uk.">
+              <i class="fa fa-question-circle" aria-hidden="true"></i>
+            </span>
+                        </span>
+                        <select class="right country-domain">
+            <option>.com</option>
+            <option>.com.au</option>
+            <option>.co.uk</option>
+            <option>.ca</option>
+            <option>.es</option>
+            <option>.de</option>
+            <option>.fr</option>
+            <option>.it</option>
+            <option>.ie</option>
+			<option>.nl</option>
+			<option>.cn</option>
+          </select>
+
+                    </li>
+                    <!--<li class="domain-div section tg-list-item">
+                        <span>Copy Item Location?
+            <span class="narrow" data-tooltip="">
+            </span>
+                        </span>
+                        <select class="right item-location-select">
+			            <option>No</option>
+			            <option>Yes</option>
+			          </select>
+
+                    </li>-->
+
+                     <li class="domain-div section tg-list-item">
+                        <span>Redirect to eBay</span>
+                        <input type="checkbox" style="float:right" id="redirect-ebay-checkbox" class="">
+                    </li>
+
+                <li class="domain-div section tg-list-item">
+                    <span>Automatically Download Images</span>
+                    <input type="checkbox" style="float:right" id="auto-download-images-checkbox" class="">
+                </li>
+
+            <!--<li class="domain-div section tg-list-item">
+                <input id="copy-listing-stor" class="input-btn" style="width:50%" value="Copy Listing (Selected)" type="button">
+            </li>
+
+            <li class="domain-div section tg-list-item">
+                <input id="download-images-stor" class="input-btn empty" style="width:50%" value="Download Images" type="button">
+            </li>-->
+
+            <!--<li class="domain-div section tg-list-item">
+                <input id="download-images-stor-var" class="input-btn empty" style="width:50%" value="Download Variations" type="button">
+            </li>-->
+
+              <!--  <li class="domain-div section tg-list-item">
+
+
+                    <input id="save-csv" class="input-btn" style="width:50%" value="Download Listing (.csv)" type="button">
+                </li>-->
+
+            <li class="domain-div section tg-list-item">
+
+
+                <input id="dash_link" class="input-btn" style="width:50%" value="Saved Listings" type="button">
+            </li>
+
+                </ul>
+
+			</div>
+
+            <br>
+            <br>
+            <input class="input-btn" id="shipping-logout" value="Logout" type="button">
+        </div>
+
+    </div>
+
+    <script src="libs/jquery-2.2.1.js"></script>
+    <script src="libs/FileSaver.js"></script>
+    <script src="libs/notify.js"></script>
+    <script src="scripts/popup.js"></script>
+
+
+
+
+</body>
+
+</html>
